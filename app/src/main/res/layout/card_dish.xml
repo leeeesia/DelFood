@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="151dp"
+    android:orientation="horizontal"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_dish_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dishName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Название блюда"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Описание блюда" />
+
+        <Button
+            android:id="@+id/price"
+            android:layout_width="95dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|end"
+            android:text="от 4000р"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>
